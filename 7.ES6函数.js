@@ -30,3 +30,7 @@ var k = (a,b) => {
     return result
 }
 console.log(k(6,2));  //8
+
+// 注意点：没有 this、super、arguments 和 new.target 绑定。
+// 箭头函数里面没有 this 对象，
+// 此时的 this 是外层的 this 对象，即 Window 
